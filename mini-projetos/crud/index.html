@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CRUD</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="container">
+    <h2>CRUD Example</h2>
+    <button class="btn" onclick="showForm()">Add New</button>
+    <table id="myTable">
+        <tr>
+            <th>ID</th>
+            <th>Name</th>
+            <th>Email</th>
+            <th>Action</th>
+        </tr>
+    </table>
+
+    <div id="formContainer" style="display: none; margin-top: 20px;">
+        <h3 id="add-new">Add New User</h3>
+        <input type="text" id="name" placeholder="Name">
+        <input type="email" id="email" placeholder="Email">
+        <button class="btn" onclick="addUser()">Save</button>
+        <button class="btn btn-danger" onclick="hideForm()">Cancel</button>
+    </div>
+</div>
+
+<script src="index.js"></script>
+</body>
+</html>
